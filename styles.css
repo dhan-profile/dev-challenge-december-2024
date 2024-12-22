@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #003d47, #0d6efd, #ffffff);
+    color: #003d47;
+    background-attachment: fixed;
+    animation: snowfallBG 20s linear infinite;
+}
+
+/* Snowfall Background Animation */
+@keyframes snowfallBG {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+/* Header Styling */
+#main-header {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-bottom: 2px solid #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+#main-header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    background: linear-gradient(
+        to right,
+        #1bff67 20%,
+        #00ffdd 30%,
+        #d1f2fa 70%,
+        #3ff082 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 3s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Navigation Styling */
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#main-nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+#main-nav ul li a {
+    background: linear-gradient(
+        135deg,
+        #82c9ff,
+        #a5d8ff,
+        #d0ebff
+    );
+    color: #0f6efc;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 10px 15px;
+    transition: transform 0.3s ease, background-position 1s ease;
+    background-size: 200% 200%;
+    animation: gradientFlow 5s infinite alternate;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+#main-nav ul li a:hover {
+    transform: scale(1.1);
+    background: linear-gradient(
+        135deg,
+        #d0ebff,
+        #dff1ff,
+        #bce2ff
+    );
+    color: #003d47;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Effect on Hover */
+#main-nav ul li a:hover::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 60%);
+    animation: snowfall 1s infinite;
+    z-index: -1;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* Section Styling */
+section {
+    margin: 2rem 10%;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #003d47;
+    margin-bottom: 1rem;
+}
+
+/* Footer Styling */
+#main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: #003d47;
+    color: #ffffff;
+    border-top: 2px solid #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+#main-footer p {
+    margin: 0.5rem 0;
+}
+
+#main-footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+#main-footer nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+#main-footer nav ul li a {
+    color: #74c0fc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#main-footer nav ul li a:hover {
+    color: #ffffff;
+}
+
+#main-header {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50%3B' xml:space='preserve'%3E%3Cstyle type='text/css'%3E.st1%7Bopacity:0.3%3Bfill:%23FFFFFF%3B%7D.st3%7Bopacity:0.1%3Bfill:%23FFFFFF%3B%7D%3C/style%3E%3Ccircle class='st1' cx='5' cy='8' r='1'/%3E%3Ccircle class='st1' cx='38' cy='3' r='1'/%3E%3Ccircle class='st1' cx='12' cy='4' r='1'/%3E%3Ccircle class='st1' cx='16' cy='16' r='1'/%3E%3Ccircle class='st1' cx='47' cy='46' r='1'/%3E%3Ccircle class='st1' cx='32' cy='10' r='1'/%3E%3Ccircle class='st1' cx='3' cy='46' r='1'/%3E%3Ccircle class='st1' cx='45' cy='13' r='1'/%3E%3Ccircle class='st1' cx='10' cy='28' r='1'/%3E%3Ccircle class='st1' cx='22' cy='35' r='1'/%3E%3Ccircle class='st1' cx='3' cy='21' r='1'/%3E%3Ccircle class='st1' cx='26' cy='20' r='1'/%3E%3Ccircle class='st1' cx='30' cy='45' r='1'/%3E%3Ccircle class='st1' cx='15' cy='45' r='1'/%3E%3Ccircle class='st1' cx='34' cy='36' r='1'/%3E%3Ccircle class='st1' cx='41' cy='32' r='1'/%3E%3C/svg%3E");
+    background-position: 0px 0px;
+    animation: animatedBackground 10s linear infinite;
+  }
+  
+  #main-header nav {
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50%3B' xml:space='preserve'%3E%3Cstyle type='text/css'%3E.st1%7Bopacity:0.7%3Bfill:%23FFFFFF%3B%7D.st3%7Bopacity:0.1%3Bfill:%23FFFFFF%3B%7D%3C/style%3E%3Ccircle class='st3' cx='4' cy='14' r='1'/%3E%3Ccircle class='st3' cx='43' cy='3' r='1'/%3E%3Ccircle class='st3' cx='31' cy='30' r='2'/%3E%3Ccircle class='st3' cx='19' cy='23' r='1'/%3E%3Ccircle class='st3' cx='37' cy='22' r='1'/%3E%3Ccircle class='st3' cx='43' cy='16' r='1'/%3E%3Ccircle class='st3' cx='8' cy='45' r='1'/%3E%3Ccircle class='st3' cx='29' cy='39' r='1'/%3E%3Ccircle class='st3' cx='13' cy='37' r='1'/%3E%3Ccircle class='st3' cx='47' cy='32' r='1'/%3E%3Ccircle class='st3' cx='15' cy='4' r='2'/%3E%3Ccircle class='st3' cx='9' cy='27' r='1'/%3E%3Ccircle class='st3' cx='30' cy='9' r='1'/%3E%3Ccircle class='st3' cx='25' cy='15' r='1'/%3E%3Ccircle class='st3' cx='21' cy='45' r='2'/%3E%3Ccircle class='st3' cx='42' cy='45' r='1'/%3E%3C/svg%3E");
+    background-position: 0px 0px;
+    animation: animatedBackground 15s linear infinite;
+    position: fixed;
+  }
+  
+  @keyframes animatedBackground {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0px 300px;
+    }
+  }
+  
