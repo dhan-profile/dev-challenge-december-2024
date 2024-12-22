@@ -1,4 +1,4 @@
-**Winter Solstice Celebrations Around the World**
+# Winter Solstice Celebrations Around the World
 
 This HTML document provides an informative overview of the winter solstice, including:
 
