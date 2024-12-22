@@ -1,5 +1,7 @@
 # Winter Solstice Celebrations Around the World
 
+![alt text](image.png)
+
 This HTML document provides an informative overview of the winter solstice, including:
 
 * **Introduction:** Explains the significance of the winter solstice as the shortest day of the year.
